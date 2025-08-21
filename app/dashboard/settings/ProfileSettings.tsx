@@ -93,7 +93,7 @@ export default function ProfileSettings() {
         // --- EDIT MODE ---
         <form onSubmit={handleSubmit} className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl">
            <div className="md:col-span-2 flex items-center space-x-4">
-            <Avatar name={user?.name || user?.email} src={user?.profilePicture || ''} size={80} />
+            <Avatar name={user?.name || user?.email || } src={user?.profilePicture || ''} size={80} />
             <div className="flex-grow">
                 <label htmlFor="profilePicture" className="block text-sm font-medium">Profile Picture URL</label>
                 <input type="text" name="profilePicture" id="profilePicture" value={formData.profilePicture} onChange={handleChange} placeholder="https://..." className={inputStyles} />
