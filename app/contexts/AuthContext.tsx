@@ -6,9 +6,18 @@ import api from '@/lib/api';
 
 interface User {
   id: string;
-  name: string;
   email: string;
   roles: string[];
+  profilePicture: string | null;
+  name?: string;
+  givenName?: string;
+  familyName?: string;
+  phoneNumber?: string;
+  gender?: string;
+  birthday?: string;
+  language?: string;
+  country?: string;
+  timezone?: string;
 }
 
 interface AuthContextType {
