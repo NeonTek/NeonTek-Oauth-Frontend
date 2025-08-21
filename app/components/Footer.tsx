@@ -1,13 +1,11 @@
-// app/components/Footer.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 import { Geist } from 'next/font/google';
 
-// You can add your social media links here
 const socialLinks = [
-  // { name: 'Facebook', href: '#', icon: '/facebook.svg' },
-  // { name: 'Twitter', href: '#', icon: '/twitter.svg' },
-  // { name: 'LinkedIn', href: '#', icon: '/linkedin.svg' },
+   { name: 'Facebook', href: '#', icon: '/facebook.svg' },
+   { name: 'Twitter', href: '#', icon: '/twitter.svg' },
+   { name: 'LinkedIn', href: '#', icon: '/linkedin.svg' },
 ];
 
 export default function Footer() {
@@ -19,7 +17,7 @@ export default function Footer() {
             {socialLinks.map((item) => (
               <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
                 <span className="sr-only">{item.name}</span>
-                {/* <Image src={item.icon} alt={item.name} width={24} height={24} /> */}
+                <Image src={item.icon} alt={item.name} width={24} height={24} /> 
               </a>
             ))}
           </div>
