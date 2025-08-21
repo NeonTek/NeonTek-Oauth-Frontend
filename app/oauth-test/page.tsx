@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 const CLIENT_ID = "34b52f49-b853-4052-890d-57a9f9b16331";
-const REDIRECT_URI = "http://localhost:3000/callback";
+const REDIRECT_URI = "https://oauth.neontek.co.ke/callback";
 
 export default function OauthTestPage() {
 
@@ -19,7 +19,7 @@ export default function OauthTestPage() {
     //   scope: 'openid profile email',
     });
     
-    window.location.href = `http://localhost:5000/oauth/authorize?${params.toString()}`;
+    window.location.href = `https://neontek-oauth.onrender.com/oauth/authorize?${params.toString()}`;
   };
 
   return (

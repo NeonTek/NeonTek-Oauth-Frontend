@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation';
 
 const CLIENT_ID = "34b52f49-b853-4052-890d-57a9f9b16331";
 const CLIENT_SECRET = "d4463556-f3b6-4cc7-9da4-29447dc79482";
-const REDIRECT_URI = "http://localhost:3000/callback";
+const REDIRECT_URI = "https://oauth.neontek.co.ke/callback";
 
 function CallbackComponent() {
   const searchParams = useSearchParams();
@@ -17,7 +17,7 @@ function CallbackComponent() {
   useEffect(() => {
     const exchangeCodeForToken = async (code: string) => {
       try {
-        const tokenResponse = await fetch('http://localhost:5000/oauth/token', {
+        const tokenResponse = await fetch('https://neontek-oauth.onrender.com/oauth/token', {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body: new URLSearchParams({
@@ -36,7 +36,7 @@ function CallbackComponent() {
 
         const { access_token } = tokenData;
 
-        const userResponse = await fetch('http://localhost:5000/api/auth/me', {
+        const userResponse = await fetch('https://neontek-oauth.onrender.com/api/auth/me', {
           headers: {
             Authorization: `Bearer ${access_token}`,
           },

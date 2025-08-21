@@ -28,7 +28,7 @@ export default function LoginPage() {
 
 
   const handleGoogleSignIn = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://neontek-oauth.onrender.com/api/auth/google";
   };
 
   const handlePasswordSubmit = async (e: FormEvent) => {
