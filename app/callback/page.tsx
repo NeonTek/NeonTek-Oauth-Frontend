@@ -1,4 +1,3 @@
-// app/callback/page.tsx
 "use client";
 
 import { useEffect, useState, Suspense } from 'react';
@@ -6,7 +5,7 @@ import { useSearchParams } from 'next/navigation';
 
 const CLIENT_ID = "34b52f49-b853-4052-890d-57a9f9b16331";
 const CLIENT_SECRET = "d4463556-f3b6-4cc7-9da4-29447dc79482";
-const REDIRECT_URI = "https://oauth.neontek.co.ke/callback";
+const REDIRECT_URI = "https://neontek-oauth.onrender.com/api/auth/google/callback";
 
 function CallbackComponent() {
   const searchParams = useSearchParams();
