@@ -18,6 +18,7 @@ interface User {
   language?: string;
   country?: string;
   timezone?: string;
+  lastLoginAt?: string;
 }
 
 interface AuthContextType {
