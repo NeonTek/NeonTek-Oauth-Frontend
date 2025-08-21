@@ -75,7 +75,7 @@ export default function ApiKeyManager() {
 
   return (
     <div className="mt-6">
-      <form onSubmit={handleCreateKey} className="flex items-center gap-4">
+      <form onSubmit={handleCreateKey} className="flex overflow-hidden items-center gap-4">
         <input
           type="text"
           value={keyName}
