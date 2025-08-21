@@ -126,7 +126,7 @@ export default function ApiKeyManager() {
             </p>
              <div className="relative overflow-hidden p-4 mt-4 font-mono text-sm bg-gray-100 rounded-md dark:bg-gray-900 dark:text-gray-300">
                 <code>{newKey}</code>
-                <button onClick={handleCopyKey} className="absolute p-1 text-gray-500 rounded-md top-2 right-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+                <button onClick={handleCopyKey} className="absolute p-1 text-gray-500 bg-green-500 rounded-md top-2 right-2 hover:bg-gray-200 dark:hover:bg-gray-700">
                     {copied ? <Check className="w-5 h-5 text-green-500" /> : <Copy className="w-5 h-5" />}
                 </button>
             </div>
