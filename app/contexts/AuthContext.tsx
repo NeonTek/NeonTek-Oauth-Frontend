@@ -19,6 +19,7 @@ interface User {
   country?: string;
   timezone?: string;
   lastLoginAt?: string;
+  twoFactorEnabled: boolean;
 }
 
 interface AuthContextType {
